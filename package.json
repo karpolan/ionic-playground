@@ -1,17 +1,16 @@
 {
   "name": "ionic-playground",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
+  "version": "0.1.1",
+  "description": "Mobile application to test features of Ionic Framework",
+  "keywords": ["ionic", "demo", "sample", "mobile", "application"],
+  "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
+  "license": "UNLICENSED",
   "private": true,
+  "homepage": "https://karpolan.com/demos/ionic-playground",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karpolan/ionic-playground"
+  },
   "dependencies": {
     "@angular/common": "^7.2.2",
     "@angular/core": "^7.2.2",
@@ -55,5 +54,12 @@
     "tslint": "~5.16.0",
     "typescript": "~3.1.6"
   },
-  "description": "An Ionic project"
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  }
 }
