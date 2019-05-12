@@ -30,13 +30,6 @@ export class AppComponent {
       url: '/about',
       icon: 'information-circle'
     },
-
-    
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
   ];
 
   constructor(

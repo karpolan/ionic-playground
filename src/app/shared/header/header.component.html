@@ -1,0 +1,16 @@
+<ng-template #popertyTitle>{{title}}</ng-template>
+
+<ng-template #innerHtml><ng-content></ng-content></ng-template>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ng-container *ngTemplateOutlet="title ? popertyTitle : innerHtml"></ng-container>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+ 

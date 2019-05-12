@@ -7,22 +7,19 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { SettingsComponent } from './settings/settings.component';
+
 
 @NgModule({
   declarations: [
-    AboutComponent,
-    ContactComponent,
-    SettingsComponent,
     AppComponent
   ],
   entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
+    SharedModule,
     AppRoutingModule
   ],
   providers: [

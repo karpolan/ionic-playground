@@ -1,13 +1,4 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header>Home</app-header>
 
 <ion-content>
     <ion-card class="welcome-card">
@@ -28,17 +19,17 @@
       <ion-list-header>
         <ion-label>What to do?</ion-label>
       </ion-list-header>
-      <ion-item href="/settings">
+      <ion-item routerLink="/settings">
         <ion-icon slot="start" color="medium" name="settings"></ion-icon>
         <ion-label>Change Application Settings</ion-label>
       </ion-item>
-      <ion-item href="/contact">
+      <ion-item routerLink="/contact">
         <ion-icon slot="start" color="medium" name="contact"></ion-icon>
         <ion-label>Contact the Support Team</ion-label>
       </ion-item>
-      <ion-item href="/about">
+      <ion-item routerLink="/about">
         <ion-icon slot="start" color="medium" name="information-circle-outline"></ion-icon>
-        <ion-label>Read about App and the Author</ion-label>
+        <ion-label>Read about the Author</ion-label>
       </ion-item>
     </ion-list>
 </ion-content>
