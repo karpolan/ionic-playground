@@ -1,6 +1,6 @@
 {
   "name": "ionic-playground",
-  "version": "0.2.7",
+  "version": "0.3.9",
   "description": "Mobile application to test features of Ionic Framework",
   "keywords": [
     "ionic",
@@ -30,6 +30,7 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.1.0",
     "cordova-android": "8.0.0",
+    "cordova-ios": "4.5.5",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
@@ -40,7 +41,7 @@
     "@angular-devkit/build-angular": "~0.13.8",
     "@angular-devkit/core": "~7.3.8",
     "@angular-devkit/schematics": "~7.3.8",
-    "@angular/cli": "~7.3.8",
+    "@angular/cli": "7.3.9",
     "@angular/compiler": "~7.2.2",
     "@angular/compiler-cli": "~7.2.2",
     "@angular/language-service": "~7.2.2",
@@ -87,7 +88,8 @@
       "cordova-plugin-ionic-keyboard": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   }
 }
