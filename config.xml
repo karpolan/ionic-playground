@@ -3,7 +3,7 @@
     <name>Ionic Playground</name>
     <description>Mobile application to test features of Ionic Framework</description>
     <author email="i@karpolan.com" href="https://karpolan.com/">Anton Karpenko</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.31.12:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -82,7 +82,5 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <allow-navigation href="http://192.168.31.12:8100" sessionid="b21a4e41" />
-    <engine name="android" spec="8.0.0" />
-    <engine name="ios" spec="4.5.5" />
+    <allow-navigation href="http://192.168.31.12:8100" sessionid="10da9c6c" />
 </widget>

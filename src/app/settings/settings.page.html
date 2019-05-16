@@ -1,5 +1,158 @@
 <app-header>Settings</app-header>
 
 <ion-content>
-  Content will be here...
+
+  <!-- Application Settings -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Application Settings</ion-card-title>
+      <ion-card-subtitle>Samples of Ionic controls</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+
+        <!-- Toggles in a List -->
+        <ion-item>
+          <ion-label>Toggle Primary</ion-label>
+          <ion-toggle color="primary" checked></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Toggle Secondary</ion-label>
+          <ion-toggle color="secondary"></ion-toggle>
+        </ion-item>
+
+        <!-- Checkboxes in a List -->
+        <ion-item>
+          <ion-label>Checkbox Primary</ion-label>
+          <ion-checkbox slot="start" color="primary" value="checkbox1" checked></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Checkbox Secondary</ion-label>
+          <ion-checkbox slot="start" color="secondary" value="checkbox2"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Checkbox at the End</ion-label>
+          <ion-checkbox slot="end" color="danger" value="checkbox3" checked></ion-checkbox>
+        </ion-item>
+
+        <!-- Radiobuttons in a List -->
+        <ion-radio-group>
+          <ion-list-header>
+            <ion-label>Group of Radio Buttons (one of many)</ion-label>
+          </ion-list-header>
+
+          <ion-item>
+            <ion-label>Option 1</ion-label>
+            <ion-radio slot="start" value="radio1" checked></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Option 2</ion-label>
+            <ion-radio slot="start" value="radio2"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Option 3</ion-label>
+            <ion-radio slot="start" value="radio3"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- System Settings -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>System Settings</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item (click)="onNativeSettings('settings')">
+        <ion-icon name="settings" slot="start"></ion-icon>
+        <ion-label>System Settings</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('display')">
+        <ion-icon name="contrast" slot="start"></ion-icon>
+        <ion-label>Dispaly Settings</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('date')">
+        <ion-icon name="time" slot="start"></ion-icon>
+        <ion-label>Date and Time</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('account')">
+        <ion-icon name="contacts" slot="start"></ion-icon>
+        <ion-label>User Accounts</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('wifi')">
+        <ion-icon name="wifi" slot="start"></ion-icon>
+        <ion-label>Wi-Fi</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('bluetooth')">
+        <ion-icon name="bluetooth" slot="start"></ion-icon>
+        <ion-label>Bluetooth</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('network')">
+        <ion-icon name="globe" slot="start"></ion-icon>
+        <ion-label>Mobile Network</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('application_details')">
+        <ion-icon name="construct" slot="start"></ion-icon>
+        <ion-label>Application Details</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('about')">
+        <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+        <ion-label>About Device</ion-label>
+      </ion-item>
+
+
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Platform Specific Settings -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Platform Specific Settings</ion-card-title>
+      <ion-card-subtitle>Different on Android and iOS</ion-card-subtitle>
+    </ion-card-header>
+
+    <!-- iOS settings -->
+    <ion-card-content *ngIf="platform.is('ios')">
+      <ion-item (click)="onNativeSettings('ringtone')">
+        <ion-icon name="musical-note" slot="start"></ion-icon>
+        <ion-label>Ringtone</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('wallpaper')">
+        <ion-icon name="easel" slot="start"></ion-icon>
+        <ion-label>Wallpaper</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('locations')">
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>Locations</ion-label>
+      </ion-item>
+    </ion-card-content>
+
+    <!-- Android settings -->
+    <ion-card-content *ngIf="platform.is('android')">
+      <ion-item (click)="onNativeSettings('battery_optimization')">
+        <ion-icon name="battery-charging" slot="start"></ion-icon>
+        <ion-label>Battery Optimization</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('memory_card')">
+        <ion-icon name="folder-open" slot="start"></ion-icon>
+        <ion-label>Memory Card</ion-label>
+      </ion-item>
+      <ion-item (click)="onNativeSettings('print')">
+        <ion-icon name="print" slot="start"></ion-icon>
+        <ion-label>Print</ion-label>
+      </ion-item>
+    </ion-card-content>
+
+  </ion-card>
+
+
 </ion-content>
