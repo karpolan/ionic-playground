@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
+import { HttpClientModule  } from '@angular/common/http';
 import { EmailComposer } from '@ionic-native/email-composer/ngx';
 
 import { SharedModule } from '../shared/shared.module';
@@ -22,6 +23,7 @@ const routes: Routes = [
     SharedModule,
     CommonModule,
     ReactiveFormsModule,
+    HttpClientModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],

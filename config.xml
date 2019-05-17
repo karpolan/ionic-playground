@@ -3,7 +3,7 @@
     <name>Ionic Playground</name>
     <description>Mobile application to test features of Ionic Framework</description>
     <author email="i@karpolan.com" href="https://karpolan.com/">Anton Karpenko</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.31.12:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
