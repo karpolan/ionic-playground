@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
+import { EmailComposer } from '@ionic-native/email-composer/ngx';
 
 import { SharedModule } from '../shared/shared.module';
 import { ContactPage } from './contact.page';
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
   {
@@ -19,11 +21,15 @@ const routes: Routes = [
   imports: [
     SharedModule,
     CommonModule,
-    FormsModule,
+    ReactiveFormsModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],
+  providers: [
+    EmailComposer
+  ],
   declarations: [
+    FormComponent,
     ContactPage
   ]
 })
