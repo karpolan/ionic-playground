@@ -95,9 +95,9 @@
       "cordova-plugin-email-composer": {}
     },
     "platforms": [
-      "android",
       "ios",
-      "browser"
+      "browser",
+      "android"
     ]
   }
 }
