@@ -1,25 +1,36 @@
 <section>
   <form [formGroup]="formContact">
- 
     <ion-item>
       <ion-label position="floating">Message *</ion-label>
-      <ion-textarea formControlName="message" name="message" rows="3" placeholder="Enter your message here..."
+      <ion-textarea
+        formControlName="message"
+        name="message"
+        rows="3"
+        placeholder="Enter your message here..."
         [class.invalid]="!formContact.controls.message.valid && submitAttempt"
       ></ion-textarea>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">Your name</ion-label>
-      <ion-input formControlName="name" name="name" type="text" placeholder="Your name here..."
+      <ion-input
+        formControlName="name"
+        name="name"
+        type="text"
+        placeholder="Your name here..."
       ></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">Your email *</ion-label>
-      <ion-input formControlName="email" name="email" type="email" placeholder="user@domain.com"
+      <ion-input
+        formControlName="email"
+        name="email"
+        type="email"
+        placeholder="user@domain.com"
         [class.invalid]="!formContact.controls.email.valid && submitAttempt"
       ></ion-input>
-   </ion-item>
+    </ion-item>
 
     <ion-text *ngIf="submitAttempt && !formContact.valid" color="danger">
       <p>Please fill out all details accurately.</p>
@@ -28,15 +39,19 @@
       <p>Your message has been sent.</p>
     </ion-text>
 
-    <ion-button color="primary" 
+    <ion-button
+      color="primary"
       [disabled]="!formContact.controls.message.valid"
       (click)="onSentViaEmail()"
-    >Send via Email</ion-button>
-    <ion-button type="submit" color="primary" class="ion-float-right"
+      >Send Email</ion-button
+    >
+    <ion-button
+      type="submit"
+      color="primary"
+      class="ion-float-right"
       [disabled]="!formContact.valid"
       (click)="onSentViaInternet()"
-    >Submit form</ion-button>
-
-
+      >Submit Form</ion-button
+    >
   </form>
 </section>
