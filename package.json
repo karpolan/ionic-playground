@@ -12,7 +12,7 @@
   "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
   "license": "UNLICENSED",
   "private": true,
-  "homepage": "https://karpolan.com/demos/ionic-playground",
+  "homepage": "https://karpolan.com/demos/ionic-playground/",
   "repository": {
     "type": "git",
     "url": "https://github.com/karpolan/ionic-playground"
