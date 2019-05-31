@@ -2,7 +2,7 @@
 
 Cross-platform mobile application to test different features of the [Ionic framework](https://ionicframework.com/).
 
-Also I'm testing publishing processes for differt Application Stores using this app.
+Also I'm testing publishing processes for different Application Stores using this app.
 
 Preview in browser [Ionic Playground](https://karpolan.com/demos/ionic-playground/)
 
