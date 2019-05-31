@@ -1,6 +1,6 @@
 {
   "name": "ionic-playground",
-  "version": "0.5.15",
+  "version": "0.5.17",
   "description": "Mobile application to test features of Ionic Framework",
   "keywords": [
     "ionic",
@@ -12,7 +12,7 @@
   "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
   "license": "UNLICENSED",
   "private": true,
-  "homepage": "https://karpolan.com/demos/ionic-playground",
+  "homepage": "https://karpolan.com/demos/ionic-playground/",
   "repository": {
     "type": "git",
     "url": "https://github.com/karpolan/ionic-playground"
@@ -35,6 +35,9 @@
     "cordova-browser": "6.0.0",
     "cordova-ios": "4.5.5",
     "cordova-open-native-settings": "^1.5.2",
+    "cordova-plugin-appcenter-analytics": "^0.3.4",
+    "cordova-plugin-appcenter-crashes": "^0.3.4",
+    "cordova-plugin-appcenter-shared": "^0.3.4",
     "cordova-plugin-email-composer": "0.9.2",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.1",
@@ -92,7 +95,9 @@
       },
       "cordova-plugin-ionic-keyboard": {},
       "cordova-open-native-settings": {},
-      "cordova-plugin-email-composer": {}
+      "cordova-plugin-email-composer": {},
+      "cordova-plugin-appcenter-analytics": {},
+      "cordova-plugin-appcenter-crashes": {}
     },
     "platforms": [
       "ios",
