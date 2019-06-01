@@ -28,7 +28,6 @@ body {
 
 #wrapper {
   transform: none;
-  perspective: none;
 }
 
 @media (max-width: 900px) {
@@ -62,11 +61,12 @@ body {
   transition: all 0.5s ease;
 }
 
-#wrapper .laying {
+#wrapper.laying {
   perspective: 1000px;
 }
+
 .laying .phone {
-  transform: rotateX(50deg) rotateY(0deg) rotateZ(-50deg);
+  transform: rotateX(50deg) rotateY(0deg) rotateZ(-40deg);
   box-shadow: -3px 3px 0 #bbb, -6px 6px 0 #bbb, -9px 9px 0 #bbb,
     -12px 12px 0 #bbb, -14px 10px 20px #666;
 }
